@@ -6,10 +6,10 @@
 -----
 
 ## Steps<br>
-1. Select KeyType( RSA or ECKEY)[ DEFAULT: RSA ].<br>
-2. Select Format( PEM or DER)[ DEFAULT: PEM ].<br>
-3. Select EC Curve when using ECKEY[ DEFAULT: secp521r1 ].<br>
-4. Select Key Size[ DEFAULT: 4096 ].<br>
+1. Select KeyType( RSA or ECKEY).<br>
+2. Select Format( PEM or DER).<br>
+3. Select EC Curve when using ECKEY.<br>
+4. Select Key Size.<br>
  Then Click START<br>
 
 ## Build.
