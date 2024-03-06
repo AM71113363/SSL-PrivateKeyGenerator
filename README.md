@@ -1,5 +1,5 @@
 <p align="center">
-<img align="center" width="460" height="385" src="https://raw.githubusercontent.com/AM71113363/SSL-PrivateKeyGenerator/master/info.png">
+<img align="center" width="460" height="385" src="https://raw.githubusercontent.com/AM71113363/SSL-PrivateKeyGenerator/master/info1.png">
 </p>
 
 # SSL-PrivateKeyGenerator
