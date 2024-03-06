@@ -69,11 +69,16 @@ void InitData()
    //---build EC Curve options      
     const mbedtls_ecp_curve_info *curve_info;
     curve_info = mbedtls_ecp_curve_list();
-    COMBO_ADD(hECCurve,curve_info->name);
-    while ((++curve_info)->name != NULL)
-    {
-        COMBO_ADD(hECCurve,curve_info->name);
-    }
+    const char *oid;
+    size_t oid_len;
+    do
+    {    //check if the EC curve is available,it depends on Config file
+        if(mbedtls_oid_get_oid_by_ec_grp(curve_info->grp_id, &oid, &oid_len) == 0)
+        {
+          COMBO_ADD(hECCurve,curve_info->name);
+        }
+    }while ((++curve_info)->name != NULL);
+    
     COMBO_SET(hECCurve,0); //the first is the default
     //---build key size options
     UCHAR tmp[8];
